@@ -4,7 +4,7 @@
 
 说人话：面向已经拿到留服（CSCSE）认证结果、但觉得**专业名称 / 专业领域写得不对劲**、准备去申请**复核**的留学生；不是帮你第一次办认证，也不是改姓名证件号那种笔误。装到 Cursor / Codex / Claude 这类 AI 编程工具里，它能一步步带着你把「为什么要改」「怎么表述诉求」「国外课和国内同层次培养方案怎么对照」理清楚，并产出可粘贴进留服系统的复核理由、个人陈述草稿，以及附件上传提醒——省得自己从零抠模板、对着空文档干瞪眼。
 
-正式一点说：这是一个开源小工具包（在 Cursor 等软件里叫 **Skill**，可以理解成「给 AI 用的专用说明书」），专帮整理留服「国外学历学位认证**复核**」里与**专业领域 / 专业名称**相关的材料，覆盖学士 / 本科、硕士、博士。
+正式一点说：这是一个开源小工具包（在 **Cursor / Codex / Claude Code** 里都叫 **Skill**，可以理解成「给 AI 用的专用说明书」），专帮整理留服「国外学历学位认证**复核**」里与**专业领域 / 专业名称**相关的材料，覆盖学士 / 本科、硕士、博士。
 
 > **这不是留服官方工具，也不代表留学服务中心的审查标准或意见。不保证复核通过。**
 
@@ -43,9 +43,9 @@
 
 **更省事：直接让 AI 帮你装**
 
-如果你已经在用 Cursor（或其他带 Agent 的工具），可以新开对话，把本仓库链接丢给它，并说一句：
+本 Skill 同时支持 **Cursor、Codex、Claude Code**。在你正在用的那个工具里新开对话，把本仓库链接丢给它，并说一句（可按需改软件名）：
 
-> 请把 https://github.com/ZephyrFZS/cscse-review 安装到我的 skills 目录，装好后确认能看到 `SKILL.md`。
+> 请把 https://github.com/ZephyrFZS/cscse-review 安装到我当前这个客户端的 skills 目录（Cursor / Codex / Claude Code 任选我正在用的），装好后确认能看到 `SKILL.md`。如果我同时用好几个，也请一并装上或告诉我怎么共用。
 
 让它帮你下载/放到正确文件夹即可（装完建议新开一轮对话再开始做复核）。不会手动操作的，优先用这一招。
 
@@ -53,22 +53,29 @@
 
 1. 打开本仓库页面，点绿色的 **Code** → **Download ZIP**，下载后解压。  
 2. 把解压出来的文件夹**改名为** `cscse-review`。  
-3. 整文件夹挪到下面其中一个位置（没有就自己新建文件夹）：
+3. 整文件夹挪到你正在用的软件对应位置（没有就自己新建文件夹；多个软件都要用就各放一份，或装一份再复制）：
+
 | 你用的软件 | 放到这里（Mac 举例） |
 |------------|----------------------|
 | Cursor | 用户目录下的 `.cursor/skills/cscse-review/` |
 | Codex | 用户目录下的 `.codex/skills/cscse-review/` |
 | Claude Code | 用户目录下的 `.claude/skills/cscse-review/` |
 
-> Mac 小提示：用户目录就是访达侧边栏里带房子图标的那个；`.cursor` 这类名字以点开头的文件夹默认可能被隐藏，可用访达菜单「前往 → 前往文件夹…」直接粘贴路径进去。
+> Mac 小提示：用户目录就是访达侧边栏里带房子图标的那个；`.cursor` / `.codex` / `.claude` 这类以点开头的文件夹默认可能被隐藏，可用访达菜单「前往 → 前往文件夹…」直接粘贴路径进去。
 
 装好后，确认文件夹里能看到一个叫 `SKILL.md` 的文件就行。
 
-**会用终端的人也可以这样装：**
+**会用终端的人也可以这样装（三个客户端示例）：**
 
 ```bash
-# 把仓库下载到 Cursor 的 skills 目录（把网址换成本仓库地址）
+# Cursor
 git clone https://github.com/ZephyrFZS/cscse-review.git ~/.cursor/skills/cscse-review
+
+# Codex
+git clone https://github.com/ZephyrFZS/cscse-review.git ~/.codex/skills/cscse-review
+
+# Claude Code
+git clone https://github.com/ZephyrFZS/cscse-review.git ~/.claude/skills/cscse-review
 ```
 
 ### 2. 准备材料（有什么交什么，没有就先跳过）
