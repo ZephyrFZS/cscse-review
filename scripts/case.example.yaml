@@ -1,0 +1,70 @@
+# Copy to your work folder as case.yaml and fill in.
+# 下列均为虚构占位，勿填入真实隐私后提交到公共仓库。
+applicant:
+  name_zh: 张三
+  name_en: San ZHANG
+  cert_no: "12xxxxxxxxxx"
+  cert_date: "2026-01-01"
+  original_major: 信息技术硕士学位
+  sign_date: "2026年1月1日"
+degree_level: 硕士  # 本科/学士 | 硕士 | 博士
+catalogue_source: "学位〔2022〕15号 https://www.moe.gov.cn/srcsite/A22/moe_833/202209/t20220914_660828.html"
+catalogue_year: "2022"
+purpose: 拟参加公务员及事业单位编制考试
+request:
+  discipline: 计算机科学与技术           # 括号外：目录正式名（专业领域）
+  foreign_major_zh_literal: 信息技术     # 括号内：国外专业直译
+  discipline_code: "0812"               # 仅内部核对；留服证书通常不展示代码
+  degree_type: 学硕
+  target_major: 计算机科学与技术（信息技术）
+  cross_faculty_confirmed: false
+transfer_credit_ratio: ""               # 如 "约1/2"；偏高则陈述须写颁证校修读
+foreign:
+  school_zh: 某某大学
+  school_en: Example University
+  program: Master of Information Technology
+  program_code: "XXXX"
+  school_unit: School of Computer Science and Engineering
+  handbook_program_url: https://example.edu/handbook/program
+  total_uoc: 96
+  courses_taken: 8
+  transfer_uoc: 48
+  transfer_note: 录取通知 Transfer Credits 页（示意）
+domestic:
+  - name: 清华大学
+    plan_title: 计算机科学与技术系硕士研究生培养方案
+    url: https://www.cs.tsinghua.edu.cn/...
+    version: "公开版（填写实际年份）"
+  - name: 上海交通大学
+    plan_title: 计算机科学与技术学术硕士培养方案
+    url: https://yjwb.seiee.sjtu.edu.cn/...
+    version: "公开页（填写实际年份）"
+personal_statement: |
+  尊敬的教育部留学服务中心老师：
+  您好！我是张三……（按 templates.md 压缩为三点）
+  恳请贵中心予以复核……
+review_reason: |
+  本人于……（三段式，见 templates.md）
+course_table_note: 每门课学分按该校规则填写。……打包选修须注明成绩单未列具体分课课号。
+credit_note: 以上课程合计满足学位学分要求。……
+goal_comparison:
+  - ["开设单位", "……", "……", "……"]
+  - ["培养目标", "……", "……", "……"]
+mappings:
+  - code: CS1001
+    title_zh: 示意课程甲
+    mode: 国外修读
+    desc: ……
+    domestic_0: 国内对应课（课号）
+    domestic_1: 国内对应课（课号）
+  - code: ELEC0001
+    title_zh: 打包选修（内容对照：示意方向）
+    mode: 转学分（打包学分，内容对照）
+    desc: 成绩单仅记打包项；对照选修列表中的示意课程
+    domestic_0: 国内对应课（课号）
+    domestic_1: "—"
+attachments:
+  - 1.国内高校A培养方案.pdf
+  - 2.国内高校B培养方案.pdf
+  - 3.个人陈述申请及相关证明材料.pdf
+  - 4.（如有）录取通知或转学分证明.pdf

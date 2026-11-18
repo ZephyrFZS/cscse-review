@@ -1,0 +1,28 @@
+# 边界：打包选修写成具体分课课号，应被 check_consistency 打回
+case_id: 05_bundled_as_transcript_code
+expect: fail
+fail_reasons: [transcript_code]
+degree_level: 硕士
+catalogue_source: "学位〔2022〕15号"
+catalogue_year: "2022"
+cert_within_12_months: true
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "0812"
+  degree_type: 学硕
+  target_major: 计算机科学与技术（信息技术）
+domestic:
+  - name: 示例985A
+    level: 硕士
+# 成绩单只有 BUNDLE01，却把 OS9001 写成正式课号
+allowed_codes: [BUNDLE01]
+mappings:
+  - code: OS9001
+    title_zh: 操作系统
+    mode: 转学分（打包学分，内容对照）
+    strength: 中
+    domestic_0: 操作系统
+credit_sum: 96
+credit_required: 96
+personal_statement: 测试打包课号诚实性
+review_reason: 测试

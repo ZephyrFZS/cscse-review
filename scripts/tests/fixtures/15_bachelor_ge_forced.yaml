@@ -1,0 +1,27 @@
+# 边界：本科通识课硬凑专业核心对应
+case_id: 15_bachelor_ge_forced
+expect: fail
+fail_reasons: [ge_forced]
+degree_level: 本科/学士
+catalogue_source: "教高函〔2024〕6号"
+catalogue_year: "2024"
+cert_within_12_months: true
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "080901"
+  target_major: 计算机科学与技术
+domestic:
+  - name: 示例985A
+    level: 本科
+allowed_codes: [GEN101]
+mappings:
+  - code: GEN101
+    title_zh: 大学写作
+    mode: 国外修读
+    category: 通识
+    strength: 强
+    domestic_0: 编译原理（硬凑）
+credit_sum: 120
+credit_required: 120
+personal_statement: 测试通识硬凑
+review_reason: 测试

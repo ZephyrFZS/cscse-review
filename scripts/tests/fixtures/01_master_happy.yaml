@@ -1,0 +1,49 @@
+# 正向：授课型硕士 + 诚实打包转学分
+case_id: 01_master_happy
+expect: pass
+degree_level: 硕士
+catalogue_source: "学位〔2022〕15号 https://www.moe.gov.cn/srcsite/A22/moe_833/202209/t20220914_660828.html"
+catalogue_year: "2022"
+cert_within_12_months: true
+purpose: 考公
+request:
+  discipline: 计算机科学与技术
+  foreign_major_zh_literal: 信息技术
+  discipline_code: "0812"
+  degree_type: 学硕
+  target_major: 计算机科学与技术（信息技术）
+  cross_faculty_confirmed: false
+transfer_credit_ratio: "约1/2"
+foreign:
+  school_en: Example University
+  program: Master of Information Technology
+  total_uoc: 96
+  transfer_uoc: 48
+domestic:
+  - name: 示例985A
+    level: 硕士
+    plan_title: 计算机科学与技术学术硕士培养方案
+allowed_codes: [CS5001, CS5002, BUNDLE01]
+mappings:
+  - code: CS5001
+    title_zh: 机器学习
+    mode: 国外修读
+    strength: 强
+    domestic_0: 机器学习（课号）
+  - code: CS5002
+    title_zh: 分布式系统
+    mode: 国外修读
+    strength: 中
+    domestic_0: 分布式系统（课号）
+  - code: BUNDLE01
+    title_zh: IT选修（内容对照：操作系统）
+    mode: 转学分（打包学分，内容对照）
+    strength: 中
+    domestic_0: 高级操作系统（课号）
+    desc: 成绩单仅记打包项；对照选修列表 Operating Systems
+credit_sum: 96
+credit_required: 96
+personal_statement: |
+  本人拟参加公务员考试，申请补充专业领域为计算机科学与技术，并将专业名称调整为计算机科学与技术（信息技术）。颁证院校修读与转入学分约各占一半。
+review_reason: |
+  申请补充专业领域为计算机科学与技术，并申请将专业名称调整为计算机科学与技术（信息技术）。

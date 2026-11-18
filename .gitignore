@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.docx
+!scripts/tests/**/*.docx
+.case.local.yaml
+case.local.yaml
+复核材料/
+*.pdf
+.env

@@ -1,0 +1,31 @@
+# 边界：博士目标选了「仅可授硕士」的专业学位类别（目录带*）
+# 0251 金融* 仅硕士专业学位
+case_id: 11_phd_master_only_star
+expect: fail
+fail_reasons: [phd_star_category]
+degree_level: 博士
+catalogue_source: "学位〔2022〕15号"
+catalogue_year: "2022"
+cert_within_12_months: true
+request:
+  discipline: 金融
+  discipline_code: "0251"
+  degree_type: 专业
+  target_major: 金融
+domestic:
+  - name: 示例985A
+    level: 博士
+allowed_codes: [FIN8001]
+mappings:
+  - code: FIN8001
+    mode: 国外修读
+    strength: 中
+    domestic_0: 金融研讨
+modules:
+  - name: 学位论文
+    strength: 强
+    domestic_0: 学位论文
+credit_sum: 16
+credit_required: 16
+personal_statement: 测试专业学位*限制
+review_reason: 测试

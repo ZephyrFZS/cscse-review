@@ -1,0 +1,40 @@
+# 正向：研究型博士，环节为主、授课为辅
+case_id: 03_phd_research_happy
+expect: pass
+degree_level: 博士
+catalogue_source: "学位〔2022〕15号 https://www.moe.gov.cn/srcsite/A22/moe_833/202209/t20220914_660828.html"
+catalogue_year: "2022"
+cert_within_12_months: true
+purpose: 求职
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "0812"
+  degree_type: 学术
+  target_major: 计算机科学与技术
+foreign:
+  school_en: Example University
+  program: Doctor of Philosophy
+  thesis_title: Scalable Graph Learning
+  total_uoc: 12
+domestic:
+  - name: 示例985A
+    level: 博士
+    plan_title: 计算机科学与技术博士培养方案
+allowed_codes: [CS8001]
+mappings:
+  - code: CS8001
+    title_zh: 研究讨论班
+    mode: 国外修读
+    strength: 中
+    domestic_0: 学术研讨（环节）
+modules:
+  - name: 开题/研究计划
+    strength: 强
+    domestic_0: 选题报告
+  - name: 学位论文
+    strength: 强
+    domestic_0: 学位论文
+credit_sum: 12
+credit_required: 12
+personal_statement: 本项目以研究训练为主，授课学分较少；研究方向为图学习。
+review_reason: 申请补充一级学科计算机科学与技术（0812）。

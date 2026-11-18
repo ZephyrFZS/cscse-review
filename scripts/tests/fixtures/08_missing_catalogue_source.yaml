@@ -1,0 +1,26 @@
+# 边界：无官方目录来源
+case_id: 08_missing_catalogue_source
+expect: fail
+fail_reasons: [catalogue_source]
+degree_level: 硕士
+catalogue_source: ""
+catalogue_year: ""
+cert_within_12_months: true
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "0812"
+  degree_type: 学硕
+  target_major: 计算机科学与技术
+domestic:
+  - name: 示例985A
+    level: 硕士
+allowed_codes: [CS1]
+mappings:
+  - code: CS1
+    mode: 国外修读
+    strength: 强
+    domestic_0: 某课
+credit_sum: 96
+credit_required: 96
+personal_statement: 测试
+review_reason: 测试

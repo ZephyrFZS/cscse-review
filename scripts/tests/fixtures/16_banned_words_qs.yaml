@@ -1,0 +1,26 @@
+# 边界：陈述含禁用词 / QS 背书
+case_id: 16_banned_words_qs
+expect: fail
+fail_reasons: [banned_words]
+degree_level: 硕士
+catalogue_source: "学位〔2022〕15号"
+catalogue_year: "2022"
+cert_within_12_months: true
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "0812"
+  degree_type: 学硕
+  target_major: 计算机科学与技术（信息技术）
+domestic:
+  - name: 示例985A
+    level: 硕士
+allowed_codes: [CS1]
+mappings:
+  - code: CS1
+    mode: 国外修读
+    strength: 强
+    domestic_0: 某课
+credit_sum: 96
+credit_required: 96
+personal_statement: 该校QS排名靠前，课程与国内高度一致，保证通过复核。
+review_reason: 申请复核

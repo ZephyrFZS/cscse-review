@@ -1,0 +1,4 @@
+interface:
+  display_name: "cscse-review"
+  short_description: "留服专业/一级学科复核材料（不含信息笔误与标注类）"
+  default_prompt: "用 /cscse-review 做留服专业领域/专业名称复核：先确认学历层次与转学分占比，按最新教育部目录写「正式名（国外专业直译）」申请句（不申请打印代码），再整理陈述与课程对照。"

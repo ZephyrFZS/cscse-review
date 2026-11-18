@@ -1,0 +1,45 @@
+# 正向：本科，核心对、通识从简
+case_id: 02_bachelor_happy
+expect: pass
+degree_level: 本科/学士
+catalogue_source: "教高函〔2026〕2号《普通高等学校本科专业目录（2026年）》http://www.moe.gov.cn/srcsite/A08/moe_1034/s3882/202604/t20260427_1434931.html"
+catalogue_year: "2026"
+cert_within_12_months: true
+purpose: 考编
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "080901"
+  degree_type: ""
+  target_major: 计算机科学与技术
+foreign:
+  school_en: Example College
+  program: Bachelor of Science in Computer Science
+  total_uoc: 120
+domestic:
+  - name: 示例985A
+    level: 本科
+    plan_title: 计算机科学与技术本科培养方案
+allowed_codes: [CS101, CS201, GEN101]
+mappings:
+  - code: CS101
+    title_zh: 程序设计
+    mode: 国外修读
+    category: 核心专业
+    strength: 强
+    domestic_0: 程序设计基础（课号）
+  - code: CS201
+    title_zh: 数据结构
+    mode: 国外修读
+    category: 核心专业
+    strength: 强
+    domestic_0: 数据结构（课号）
+  - code: GEN101
+    title_zh: 写作
+    mode: 国外修读
+    category: 通识
+    strength: 无
+    domestic_0: "—"
+credit_sum: 120
+credit_required: 120
+personal_statement: 申请将认证专业名称调整为计算机科学与技术。
+review_reason: 对照教育部本科专业目录内名称申请调整。

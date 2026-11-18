@@ -1,0 +1,26 @@
+# 边界：学分合计不等于学位要求
+case_id: 10_credit_mismatch
+expect: fail
+fail_reasons: [credits]
+degree_level: 硕士
+catalogue_source: "学位〔2022〕15号"
+catalogue_year: "2022"
+cert_within_12_months: true
+request:
+  discipline: 计算机科学与技术
+  discipline_code: "0812"
+  degree_type: 学硕
+  target_major: 计算机科学与技术
+domestic:
+  - name: 示例985A
+    level: 硕士
+allowed_codes: [CS1]
+mappings:
+  - code: CS1
+    mode: 国外修读
+    strength: 强
+    domestic_0: 某课
+credit_sum: 84
+credit_required: 96
+personal_statement: 测试学分
+review_reason: 测试
