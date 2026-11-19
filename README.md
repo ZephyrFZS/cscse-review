@@ -200,8 +200,6 @@ cscse-review/
 ├── examples.md                   # 虚构样例结构
 ├── agents/
 │   └── openai.yaml               # Codex 等客户端元数据（若适用）
-├── docs/
-│   └── wechat-pay-tip.jpg        # 可选打赏收款码
 └── scripts/
     ├── build_review_docx.py      # 可选：生成 Word
     ├── check_consistency.py      # 可选：一致性检查
