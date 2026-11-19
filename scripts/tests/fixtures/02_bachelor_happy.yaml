@@ -7,18 +7,19 @@ catalogue_year: "2026"
 cert_within_12_months: true
 purpose: 考编
 request:
-  discipline: 计算机科学与技术
-  discipline_code: "080901"
+  discipline: 计算机类
+  discipline_code: ""
+  foreign_major_zh_literal: 智能科技与服务
   degree_type: ""
-  target_major: 计算机科学与技术
+  target_major: 计算机类（智能科技与服务）
 foreign:
   school_en: Example College
-  program: Bachelor of Science in Computer Science
+  program: Bachelor of Intelligent Technology and Services
   total_uoc: 120
 domestic:
   - name: 示例985A
     level: 本科
-    plan_title: 计算机科学与技术本科培养方案
+    plan_title: 计算机类相关本科培养方案
 allowed_codes: [CS101, CS201, GEN101]
 mappings:
   - code: CS101
@@ -41,5 +42,5 @@ mappings:
     domestic_0: "—"
 credit_sum: 120
 credit_required: 120
-personal_statement: 申请将认证专业名称调整为计算机科学与技术。
-review_reason: 对照教育部本科专业目录内名称申请调整。
+personal_statement: 申请补充专业领域为计算机类（智能科技与服务）。
+review_reason: 对照教育部本科专业目录，申请补充专业领域为计算机类（智能科技与服务）。
